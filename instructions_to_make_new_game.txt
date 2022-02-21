@@ -1,0 +1,4 @@
+Copy the Dedalus folder and name it to your game's title.
+
+Dedalus docs here:
+https://github.com/pistacchio/Dedalus

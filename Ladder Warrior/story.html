@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ladder Warrior</title>
+
+    <script src="./libraries/doT.min.js"></script>
+    <script src="./libraries/jquery.min.js"></script>
+    <script src="./libraries/dedalus.js"></script>
+    <script src="./libraries/dedalus-web.js"></script>
+
+    <link rel="stylesheet" href="themes/plain/story.css">
+
+ </head>
+<body>
+    <div id="story">
+
+        <initscript>
+            story.ladderRungs = ["Mail Room Monkey", "Jimminy Janitor", "Big Potato"]; 
+            story.ladderPosition = 0;
+        </initscript>
+
+        <beforeEveryThing>
+        </beforeEveryThing>
+
+        <beforeEveryPageTurn>
+        </beforeEveryPageTurn>
+
+        <beforeEveryParagraphShown>
+        </beforeEveryParagraphShown>
+
+        <afterEveryThing>
+        </afterEveryThing>
+
+        <afterEveryPageTurn>
+        </afterEveryPageTurn>
+
+        <afterEveryParagraphShown>
+        </afterEveryParagraphShown>
+
+        <!-- Novel -->
+        <title>Ladder Warrior</title>
+
+        <!-- Objects -->
+        <obj id="step-ladder" inventoryName="Ol Laddy">
+            <action id="Examine">
+                It's a Werner6 ft. Fiberglass Step Ladder ( 10 ft. Reach Height) with 300 lb. Load Capacity Type IA Duty Rating
+                    Model# NXT1A06
+                    (4494)
+                    $7988
+                    $98.97
+                    Save $19.09 (19%)
+                    Available for pickup
+                    Pickup
+                    23 in stock at Chicopee
+                    Available Shipping
+                    Delivery
+                    Standard
+                    !
+                    You thank your lucky stars.
+            </action>
+
+            <action id="Get">
+                <when>!story.isInInventory('step-ladder')</when>
+                You sling the Werner6 ft. Fiberglass Step Ladder ( 10 ft. Reach Height) with 300 lb. Load Capacity Type IA Duty Rating
+                    Model# NXT1A06
+                    (4494)
+                    $7988
+                    $98.97
+                    Save $19.09 (19%)
+                    Available for pickup
+                    Pickup
+                    23 in stock at Chicopee
+                    Available Shipping
+                    Delivery
+                    Standard
+                    over your shoulder and cock your rifle. It's gonna be a cold day in hell before you leave ol Laddy behind.
+                {{ story.putInInventory('step-ladder'); }}
+                {{ story.putInInventory('rifle'); }}
+            </action>
+        </obj>
+
+        <obj id="rifle" inventoryName="A rifle">
+            <action id="Examine">
+                Your very own 
+                Daisy Outdoor Products Model 1938 Red Ryder BB Gun, Wood Grain, Overall length: 35.4 Inch
+                Visit the Daisy Store
+                4.7 out of 5 stars 3,063 ratings
+                | 234 answered questions
+                $47.20
+                Price:
+                $51.90
+                Discount Provided by Amazon. Details
+                Get 5% back ($2.36 in rewards) on the amount charged to your Amazon Prime Rewards Visa Signature Card.
+                Brand   Daisy
+                Color   Wood Grain
+                Rounds  650
+                Caliber     0.177
+                Item Dimensions LxWxH   1 x 1 x 1 inches
+                Item Weight     0.85 Kilograms
+                Air Gun Power Type  Spring piston
+                Barrel Material Type    Alloy Steel
+                Frame Material  Plastic
+                See more
+                About this item
+
+                    Synthetic
+                    Imported
+                    177 Cal BB gun rifle with steel smooth bore barrel
+                    650 shot capacity
+                    350 fps max velocity
+                    Lever-cocking, spring air action
+                    Stained solid wood stock and forearm with blade and ramp front and adjustable rear sight
+
+                New (7) from $51.90
+                Report incorrect product information.
+                Alexa helps you make informed choices while you browse
+                Just ask, "Alexa, how many calories are in an apple?" Learn more about Alexa
+                You've had it since you were a kid! You'll always remember the blisteringly hot summer day your stepdad gave it to you and yelled at you every time you missed one of the beer cans on the fence, fuck you Seth.
+            </action>
+        </obj>
+
+        <obj id="janitors-mop" inventoryName="Janitor's Mop">
+            <action id="Examine">
+                It's a
+                    Quickie
+                    Professional 24 oz. Janitor Wing Nut Mop
+                    (19)
+                    Questions & Answers (3)
+                    Hover Image to Zoom
+                    $2172
+
+                        Mop head made of 4-ply cotton for optimal absorption
+                        Sturdy, lacquered 56 in. hardwood handle
+                        Galvanized steel wing nut mop clamp to ensure durability
+                        View More Details
+
+                    How to Get It
+                    Delivering to: 01075 |
+
+                    Ship to Store
+                    Pickup
+                    Feb 23 - Feb 28
+                    FREE
+                    Ship to Home
+                    Get it by
+                    Thu, Feb 24
+                    FREE
+                    Scheduled Delivery
+                    Not available for this item
+                    We'll send up to 14 to Chicopee for free pickup 
+                It's still damp from the off-gassing of the Janitor.
+            </action>
+        </obj>
+
+        <obj id="cleaning-supplies" inventoryName="Cleaning Supplies">
+            <action id="Examine">
+                Like fucking bleacha dn shit.
+            </action>
+
+            <action id="Huff">
+                You take a deep whiff of the Cleaning Supplies. You immediately start feeling light headed and so fucking cool. <br />
+                A 27 year old startup founder in $800 jeans, a $200 t-shirt and a $2500 blazer shouts <a style="color:green">holy shit I like your gumption, I am the startup of a founder and I want people to work for me, here's a million dollar,s you're hired"</a>. <br />
+                You know the Heavy Potato is not going to like this, but you head to his office anyways. <br />
+                <ul class="two-character-dialog">
+                    <li>I quit, ya see?</li>
+                    <li>Now I'm gonna have to fight you on that one. You haven't been here even 3 minutes and you are already climbing the ladder. You are a true Ladder Warrior. I realize suddenly that you are a true go-getter, the sort of man who I'd think of every waking moment of every waking hour of every waking day of my life after this in constant fear for my career knowing that you are out on the loose.</li>
+                    <li><i>You cock Ol Laddy, spit your cigar butt on the ground and tell him to beat it. He scurries out of his office and you sit in his fine leather chair and slowly run your finger along the shiny, fine mahogany desk. You touch your thumb to your forefinger before tapping the Line 2 button on your conference phone.</i> Linda, could we get the desk dusted while I'm out at lunch?</i></li>
+                    <li>Certainly.</li>
+                    <li><i>You have been <turn to="lead-coordinator">promoted to Lead Coordinator</turn>. You spend the rest of the afternoon watching videos of coordinated Japanese walking on Youtube that shit is so fucking crazy dude Linda get in here, you guys rip the bong hahaha duude look at the shit that's CRAAAAZY HAHAHA.https://www.youtube.com/watch?v=mMitNrvH5l8</i></li>
+                </ul>
+            </action>
+        </obj>
+
+        <character id="mail-room-receptionist">
+            <action id="Introduce yourself">
+                <when>!story.isReceptionistIntroduced</when>
+                <ul class="two-character-dialog">
+                    <li>Hi, today's my first day at MegaCorp, do you know where I get trained to work in the mail room?</li>
+                    <li>Of course, follow me.</li>
+                    <li><i>You follow her down some flights of stairs into the <turn to="mail-room">mail room</turn>.</i></li>
+                </ul>
+                {{ story.isReceptionistIntroduced = true; }}
+            </action>
+        </character>
+
+        <character id="janitor">
+            <action id="Examine">
+                <when>!story.isJanitorExamined</when>
+                He's dead.
+                {{ story.isJanitorExamined = true; }}
+            </action>
+        </character>
+
+        <!-- Pages -->
+        <page id="intro">
+            It's your first day at Megacorp starting in the mail room! As with any true Ladder Warrior, you are destined for the top.
+        </page>
+
+        <page id="lobby-intro" class="first">
+            You are in the lobby of MegaCorps Headquarters in America, America. <br />
+            You see a <interact with="mail-room-receptionist">receptionist</interact>. <br />
+            You see a <interact with="step-ladder">step ladder</interact> in the corner.<br />
+        </page>
+
+        <page id="mail-room">
+            You are in the mail room. It stinks of piss and shit, you look around and the homeless are 3 layers thick, writhing on the ground. <br />
+            Across the way you see a portly man with a neatly trimmed, dark brown mustache, coarse salt and pepper hair tucked under a navy blue mail cap, and the thousand yard stare and empty smile of a man on the brink. <br />
+            {{? story.isInInventory('rifle') }}
+                He notices your rifle and tightens his belt one loop. <br />
+                <a style="color:blueviolet">Sorry, chinese for lunch.</a> <br />
+            {{?}}
+            {{? story.isInInventory('step-ladder') }}
+                <i>You extend your ladder aggressively, proudly pointing it straight up to the ceiling.</i> <br />
+                You are nothing to me. <br />
+                Your boss cowers before you. He promotes you to <turn to="janitor-transit">janitor</turn>.
+            {{??}}
+                You stare deep into your bosses eyeses. At first you see nothing, emptiness and nerves behind his eyes. However, with patience, care, and compassion you see the veil and you reach out and pierce it. A tear rolls down his cheek. He promotes you to <turn to="janitor-transit">janitor</turn>.
+            {{?}}
+        </page>
+
+        <page id="janitor-transit">
+            The man fetches his rickshaw and shouts for you to get in. You feel the blood rush to your head as you hear the sirens blare. You run and dive head first into the rickshaw, the man takes off in a flash. <br />
+            As you're speeding along you see four veiny men racing along carrying a PalanquinA palanquin is a covered litter, usually for one passenger. It is carried by an even number of bearers (between two and eight, but most commonly four) on their shoulders, by means of a pole projecting fore and aft.[3][4][5], the Palanquin catches up and runs parallel to you. <br />
+            The curtain withdraws and the prime minister, a real toad of a man shouts at you to <a style="color:red">get in</a>! <br />
+            You leap into the Palanquin and race off up the stairs into the <turn to="janitors-closet">Janitor's closet</turn>
+        </page>
+
+        <page id="janitors-closet">
+            You peer into the Janitor's Closet and see <interact with="janitor">a man</interact> sitting on a chair, slumped over. <br />
+            Leaning against the wall there's a <interact with="janitors-mop">Janitor's Mop</interact>. <br />
+            There's plenty of <interact with="cleaning-supplies">Cleaning Supplies</interact> on all the shelves surrounding the man. <br />
+        </page>
+
+    </div>
+
+    <div id="wrapper">
+        <div id="title"></div>
+
+        <div id="inventoryHostWrapper">
+            <h2>Inventory</h2>
+            <div id="inventoryHost"></div>
+        </div>
+
+        <div id="host"></div>
+    </div>
+
+    <div id="interactionHost"></div>
+
+    <div id="undoStageHost"></div>
+
+    <div id="footer">
+        <!--<a id="undoHost" href="#">Undo</a> &bull; --><a id="saveHost" href="#">Save</a> &bull; <a id="restoreHost" href="#">Restore</a> &bull; <a id="reseteHost" href="#">Reset</a>
+    </div>
+
+    <script>
+        $(function () {
+            new DedalusWeb({
+                domSource         : $('#story'),
+                domTarget         : $('#host'),
+                titleTarget       : $('#title'),
+                inventoryTarget   : $('#inventoryHost'),
+                interactionTarget : $('#interactionHost'),
+                undoTarget        : $('#undoHost'),
+                undoStageTarget   : $('#undoStageHost'),
+                saveTarget        : $('#saveHost'),
+                restoreTarget     : $('#restoreHost'),
+                resetTarget       : $('#reseteHost'),
+            });
+        });
+
+    </script>
+</body>
+</html>
